@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import ExperiencesCard from "./components/ExperiencesCard";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import db from "./data";
 
 function App() {
 	return (
@@ -9,6 +11,11 @@ function App() {
 			<AppContainer>
 				<Navbar />
 				<Hero />
+				<CardsContainer>
+					{db.map((experience) => (
+						<ExperiencesCard key={experience.id} {...experience} />
+					))}
+				</CardsContainer>
 			</AppContainer>
 		</MainContainer>
 	);
@@ -27,8 +34,25 @@ const MainContainer = styled.div`
 `;
 
 const AppContainer = styled.div`
-	width: 550px;
-	max-width: 550px;
+	width: 600px;
+	max-width: 800px;
+	max-height: 830px;
 	border-radius: 9px;
 	background-color: #ffffff;
+
+	overflow-x: hidden;
+`;
+
+const CardsContainer = styled.div`
+	width: auto;
+
+	margin-left: 36px;
+	margin-right: 36px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	overflow-x: auto;
 `;

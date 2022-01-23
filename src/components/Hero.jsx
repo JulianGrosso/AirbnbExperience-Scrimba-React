@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImg from "../assets/photo-grid.png";
 
 const Hero = () => {
 	return (
 		<HeroContainer>
-			<ImgHero src={HeroImg} alt="" />
+			<ImgHero src="./assets/photo-grid.png" alt="" />
 			<TitleWrap>
 				<Title>Online Experiences</Title>
 				<Text>
@@ -25,13 +24,14 @@ const HeroContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	padding: 36px;
+	padding: 0px 36px;
+	margin: 24px 0px;
 `;
 
 const ImgHero = styled.img`
 	max-width: 390px;
 	align-self: center;
-	margin: 16px 0px;
+	margin: 10px 0px;
 `;
 
 const TitleWrap = styled.div`
