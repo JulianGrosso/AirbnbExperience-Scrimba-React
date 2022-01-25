@@ -42,11 +42,13 @@ const CardContainer = styled.div`
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-
-	margin-right: 35px;
+	
+	margin-top: 10px;
 	margin-bottom: 10px;
+
+	cursor: pointer;
 `;
 
 const ImageWrap = styled.div`

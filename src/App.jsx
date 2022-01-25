@@ -8,15 +8,15 @@ import db from "./data";
 function App() {
 	return (
 		<MainContainer>
-			<AppContainer>
-				<Navbar />
+			<Navbar />
+			<Home>
 				<Hero />
 				<CardsContainer>
 					{db.map((experience) => (
 						<ExperiencesCard key={experience.id} {...experience} />
 					))}
 				</CardsContainer>
-			</AppContainer>
+			</Home>
 		</MainContainer>
 	);
 }
@@ -25,34 +25,38 @@ export default App;
 
 const MainContainer = styled.div`
 	width: 100vw;
-	height: 100vh;
+	padding-bottom: 40px;
 
 	display: flex;
-	justify-content: center;
-
-	background-color: #0a0a0a;
+	flex-direction: column;
+	align-items: center;
 `;
 
-const AppContainer = styled.div`
-	width: 600px;
-	max-width: 800px;
-	max-height: 830px;
-	border-radius: 9px;
-	background-color: #ffffff;
+const Home = styled.div`
+	width: 100%;
+	max-width: 1440px;
 
-	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `;
 
 const CardsContainer = styled.div`
-	width: auto;
-
-	margin-left: 36px;
-	margin-right: 36px;
-
+	width: 100%;
+	max-width: 900px;
+	padding: 25px 0px;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	flex-wrap: nowrap;
-	overflow-x: auto;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	@media screen and (max-width: 375px) {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow: auto hidden !important;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 `;

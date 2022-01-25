@@ -19,36 +19,57 @@ const Hero = () => {
 export default Hero;
 
 const HeroContainer = styled.div`
+	width: 100%;
+
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 
-	padding: 0px 36px;
-	margin: 24px 0px;
+	padding: 40px;
+
+	@media screen and (max-width: 375px) {
+		flex-direction: column;
+		padding-bottom: 0px;
+	}
 `;
 
 const ImgHero = styled.img`
-	max-width: 390px;
-	align-self: center;
-	margin: 10px 0px;
+	width: 500px;
+
+	@media screen and (max-width: 375px) {
+		width: 300px;
+	}
 `;
 
 const TitleWrap = styled.div`
-	width: 100%;
+	padding-top: 25px;
+	padding-left: 40px;
+
+	@media screen and (max-width: 375px) {
+		padding-left: 0px;
+	}
 `;
 
 const Title = styled.h1`
 	text-align: left;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
+
+	@media screen and (max-width: 375px) {
+		font-size: 28px;
+		text-align: center;
+	}
 `;
 
 const Text = styled.p`
+	max-width: 320px;
+
 	text-align: left;
 	font-size: 16px;
 	line-height: 110%;
-
 	color: #222222;
 
-	max-width: 320px;
+	@media screen and (max-width: 375px) {
+		text-align: center;
+	}
 `;

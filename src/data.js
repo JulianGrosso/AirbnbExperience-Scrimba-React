@@ -1,5 +1,18 @@
 export default [
 	{
+		id: 5,
+		title: "Camp like a Californian: Lake Tahoe",
+		description: "",
+		price: 439,
+		coverImg: "camp-and-fire.png",
+		stats: {
+			rating: 5,
+			reviewCount: 3,
+		},
+		location: "USA",
+		openSpots: 3,
+	},
+	{
 		id: 1,
 		title: "Life Lessons with Katie Zaferes",
 		description:
@@ -11,7 +24,20 @@ export default [
 			reviewCount: 6,
 		},
 		location: "Online",
-		openSpots: 0,
+		openSpots: 10,
+	},
+	{
+		id: 6,
+		title: "Cetina canyon rafting",
+		description: "",
+		price: 68,
+		coverImg: "cetina-canyon.png",
+		stats: {
+			rating: 4.98,
+			reviewCount: 1524,
+		},
+		location: "Croatia",
+		openSpots: 3,
 	},
 	{
 		id: 2,
@@ -40,5 +66,44 @@ export default [
 		},
 		location: "Norway",
 		openSpots: 3,
+	},
+	{
+		id: 4,
+		title: "Surf and Camp at an Epic Campsite",
+		description: "",
+		price: 365,
+		coverImg: "surf-and-camp.png",
+		stats: {
+			rating: 4.97,
+			reviewCount: 71,
+		},
+		location: "USA",
+		openSpots: 0,
+	},
+	{
+		id: 7,
+		title: "Homestay trekking in northern Vietnam",
+		description: "",
+		price: 109,
+		coverImg: "homestay-trekking.png",
+		stats: {
+			rating: 5,
+			reviewCount: 202,
+		},
+		location: "Indonesia",
+		openSpots: 20,
+	},
+	{
+		id: 8,
+		title: "Jungle retreat camping in Bali",
+		description: "",
+		price: 126,
+		coverImg: "jungle-camping.png",
+		stats: {
+			rating: 4.92,
+			reviewCount: 83,
+		},
+		location: "Vietnam",
+		openSpots: 10,
 	},
 ];
