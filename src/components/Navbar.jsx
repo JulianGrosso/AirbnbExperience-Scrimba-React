@@ -5,7 +5,7 @@ const Navbar = () => {
 	return (
 		<NavContainer>
 			<Wrap>
-				<Logo src="./assets/airbnb-logo.png" alt="" />
+				<Logo src="./assets/airbnb-logo.svg" alt="" />
 			</Wrap>
 		</NavContainer>
 	);
