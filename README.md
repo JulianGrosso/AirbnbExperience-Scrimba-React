@@ -1,4 +1,4 @@
-<img src="./logo512.png" width="300" height="auto">
+<a href="https://airbnb-react-scrimba-jg.netlify.app/"><img src="./public/assets/appmockup_desktop&mobile.png" href="" width="auto" height="auto"></a>
 
 # Airbnb Experiences - Scrimba project
 
